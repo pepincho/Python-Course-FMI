@@ -1,5 +1,6 @@
 import unittest
-from solution import body_mass_index, shape_of
+# from solution import body_mass_index, shape_of
+from solution_v2 import body_mass_index, shape_of
 
 
 class TestBodyMassIndex(unittest.TestCase):
