@@ -1,2 +1,1 @@
-# Python-Course-FMI
-All tasks during Programming with Python course in FMI 
+## All tasks and materials during Python programming course in FMI, Sofia University, 2016
