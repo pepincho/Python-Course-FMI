@@ -12,9 +12,8 @@ class TestImages(unittest.TestCase):
     def test_grayscale_rotate_left(self):
         rotated = solution.rotate_left(self.image)
         expected = [
-            [(85, 85, 85), (85, 85, 85), (85, 85, 85)],
-            [(85, 85, 85), (85, 85, 85), (85, 85, 85)],
-            [(85, 85, 85), (85, 85, 85), (85, 85, 85)]]
+            [tuple([85 for i in range(3)]) for i in range(3)]
+            for i in range(3)]
 
         for i in range(len(expected)):
             for j in range(len(expected[0])):
@@ -23,9 +22,8 @@ class TestImages(unittest.TestCase):
     def test_grayscale_lighten(self):
         lighten = solution.lighten(self.image, 0.5)
         expected = [
-            [(170, 170, 170), (170, 170, 170), (170, 170, 170)],
-            [(170, 170, 170), (170, 170, 170), (170, 170, 170)],
-            [(170, 170, 170), (170, 170, 170), (170, 170, 170)]]
+            [tuple([170 for i in range(3)]) for i in range(3)]
+            for i in range(3)]
 
         for i in range(len(expected)):
             for j in range(len(expected[0])):
@@ -34,9 +32,8 @@ class TestImages(unittest.TestCase):
     def test_grayscale_invert(self):
         inverted = solution.invert(self.image)
         expected = [
-            [(170, 170, 170), (170, 170, 170), (170, 170, 170)],
-            [(170, 170, 170), (170, 170, 170), (170, 170, 170)],
-            [(170, 170, 170), (170, 170, 170), (170, 170, 170)]]
+            [tuple([170 for i in range(3)]) for i in range(3)]
+            for i in range(3)]
 
         for i in range(len(expected)):
             for j in range(len(expected[0])):
@@ -45,9 +42,8 @@ class TestImages(unittest.TestCase):
     def test_grayscale_darken(self):
         inverted = solution.darken(self.image, 0.5)
         expected = [
-            [(42, 42, 42), (42, 42, 42), (42, 42, 42)],
-            [(42, 42, 42), (42, 42, 42), (42, 42, 42)],
-            [(42, 42, 42), (42, 42, 42), (42, 42, 42)]]
+            [tuple([42 for i in range(3)]) for i in range(3)]
+            for i in range(3)]
 
         for i in range(len(expected)):
             for j in range(len(expected[0])):
